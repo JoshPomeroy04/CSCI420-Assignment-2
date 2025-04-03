@@ -26,6 +26,16 @@ def join(tokens):
     return joined
 
 def mask(input_data, output_file):
+    """Masks if statements in a given input set and saves masked method and target code
+       to a specified output file.
+
+    Args:
+        input_data: Pandas Data Frame representing csv data
+        output_file: Name for the generated output file
+
+    Returns:
+        None
+    """
     with open(f"{FOLDER_PATH}/data/{output_file}", mode='w', newline='', encoding='utf-8') as csvfile:
         csv_writer = csv.writer(csvfile)
         csv_writer.writerow(["Masked Method", "Target Code"])
