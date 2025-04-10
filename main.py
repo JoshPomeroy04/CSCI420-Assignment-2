@@ -39,11 +39,11 @@ training_args = TrainingArguments(
     learning_rate=5e-5,
     per_device_train_batch_size=2,
     per_device_eval_batch_size=2,
-    num_train_epochs=7,
+    num_train_epochs=9,
     weight_decay=0.01,
     load_best_model_at_end=True,
     metric_for_best_model="eval_loss",
-    save_total_limit=2,
+    save_total_limit=6,
     logging_steps=100,
     push_to_hub=False,
 )
@@ -58,7 +58,7 @@ trainer = Trainer(
 )
 
 print("Training Model\n")
-trainer.train()
+trainer.train(resume_from_checkpoint=True)
 
 metrics = trainer.evaluate(tokenized_datasets["test"])
 print("Test Evaluation Metrics:", metrics)
