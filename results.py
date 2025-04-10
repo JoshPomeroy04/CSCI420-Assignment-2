@@ -30,6 +30,6 @@ with open(f"{FOLDER_PATH}/testset-results.csv", mode='w', newline='', encoding='
                         exact_count += 1
                 codebleuscore = calc_codebleu([fact], [pred], lang="python", weights=(0.25, 0.25, 0.25, 0.25), tokenizer=None)
                 csv_writer.writerow([dataset["test"]["Masked Method"][i], fact, pred, 
-                                     round(codebleuscore["codebleu"], 2) * 100, round(bleuscore, 2), exact])
+                                     round(codebleuscore["codebleu"] * 100, 2) , round(bleuscore, 2), exact])
 
 print(f"Number of exact matches: {exact_count}\n Percent exact matches: {(exact_count/5000)*100}")
