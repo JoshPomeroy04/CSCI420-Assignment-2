@@ -38,8 +38,8 @@ The model can be trained by simply running main.py The number of epochs and save
 If you have your own data sets that have not been preprocessed yet, you can run mask.py to mask and flatten the data sets.
 generate_predictions.py generates predicted statements by a specified model. 
 
-If you want to go through the process of data processing, the original data can be found here: https://piazza.com/class_profile/get_resource/m5yv2dhoopb363/m8rm0p0lved54j\
-Models that I have trained can be found here: https://drive.google.com/file/d/1VMbExH4zCX1FwUZ0uhcpnf6p-Q9yHHoe/view?usp=sharing\
+If you want to go through the process of data processing, the original data can be found here: https://piazza.com/class_profile/get_resource/m5yv2dhoopb363/m8rm0p0lved54j \
+Models that I have trained can be found here: https://drive.google.com/file/d/1VMbExH4zCX1FwUZ0uhcpnf6p-Q9yHHoe/view?usp=sharing \
 
 ## **2.4 Evaluate**
 
