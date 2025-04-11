@@ -1,7 +1,7 @@
 # CSCI420-Assignment-2
 
 # **1. Introduction**  
-This project explores **fine tuning models**. In this project, the codet5-small model is fine tuned in order to be able to predict if statements. A Python method with a masked if statement is fed into the model and as output, the model generates an if statement that it thinks belongs there. 
+This project explores **fine tuning models**. In this project, the codet5-small model is fine tuned in order to be able to predict if statements. A Python method with a masked if statement is fed into the model and as output, the model generates an if statement that it thinks belongs there.
 
 # **2. Getting Started**  
 
@@ -12,16 +12,16 @@ This project is implemented in **Python 3.10.12** 64-bit. It was developed and t
 (1) Clone the repository to your workspace:  
 ```shell
 ~ $ git clone https://github.com/JoshPomeroy04/CSCI420-Assignment-2.git
-
+```
 (2) Navigate into the repository
 
-```
+
 
 Ensure you set the FOLDER_PATH variable to be the correct folder path of the workspace. This variable is easily found at the top of each .py file
 
 ## **2.2 Install Packages**
 
-Install the required dependencies:
+Install the required dependencies: \
 python -m pip install tree-sitter==0.23 \
 python -m pip install tree-sitter-python \
 python -m pip install sacrebleu \
@@ -38,8 +38,8 @@ The model can be trained by simply running main.py The number of epochs and save
 If you have your own data sets that have not been preprocessed yet, you can run mask.py to mask and flatten the data sets.
 generate_predictions.py generates predicted statements by a specified model. 
 
-If you want to go through the process of data processing, the original data can be found here:
-Models that I have trained can be found here:
+If you want to go through the process of data processing, the original data can be found here: https://piazza.com/class_profile/get_resource/m5yv2dhoopb363/m8rm0p0lved54j\
+Models that I have trained can be found here: https://drive.google.com/file/d/1VMbExH4zCX1FwUZ0uhcpnf6p-Q9yHHoe/view?usp=sharing\
 
 ## **2.4 Evaluate**
 
